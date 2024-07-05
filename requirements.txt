@@ -1,0 +1,11 @@
+streamlit
+streamlit_option_menu 
+pandas 
+numpy 
+seaborn 
+joblib
+matplotlib.pyplot 
+scikit-learn
+collections 
+imbalanced-learn
+itertools
