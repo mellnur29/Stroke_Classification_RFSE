@@ -1879,7 +1879,7 @@ Dataset stroke ini berasal dari penelitian thesis Oluwafemi Emmanuel Zachariah t
                             st.subheader('Hasil Klasifikasi dengan Random Forest SMOTE ENN')
                             cek_hasil = st.form_submit_button("Cek Hasil Klasifikasi")
                             if cek_hasil :
-                                st.dataframe(inputs)
+                                # st.dataframe(inputs)
 
                                 
                                 use_model = joblib.load("random_forest_smoteenn_3_n_estimator=15_max_depth=None_criterion=entropy.joblib")
