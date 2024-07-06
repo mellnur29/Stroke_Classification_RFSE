@@ -437,9 +437,7 @@ Dataset stroke ini berasal dari penelitian thesis Oluwafemi Emmanuel Zachariah t
                         RF_pred = RF.predict(X_test)
                         # Menghitung metrik evaluasi
                         
-                        precision = precision_score(y_test, RF_pred)
-                        recall = recall_score(y_test, RF_pred)
-                        f1 = f1_score(y_test, RF_pred)
+                       
                         cm = confusion_matrix(y_test, RF_pred)
                         TP = cm[1, 1]
                         FP = cm[0, 1]
@@ -669,9 +667,7 @@ Dataset stroke ini berasal dari penelitian thesis Oluwafemi Emmanuel Zachariah t
 
                         # Menghitung metrik evaluasi
                         accuracy = round(accuracy_score(y_test, RF_pred),2)
-                        precision = precision_score(y_test, RF_pred)
-                        recall = recall_score(y_test, RF_pred)
-                        f1 = f1_score(y_test, RF_pred)
+                    
                         cm = confusion_matrix(y_test, RF_pred)
                         df_result = pd.DataFrame({'y_test': y_test, 'RF_pred': RF_pred}, index=X_test.index)
     
