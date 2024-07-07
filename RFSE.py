@@ -981,12 +981,7 @@ Dataset stroke ini berasal dari penelitian thesis Oluwafemi Emmanuel Zachariah t
                             st.dataframe(df_smote_enn)
                             X_resampled_smote_enn= df_smote_enn.drop('stroke',axis=1)
                             y_resampled_smote_enn = df_smote_enn['stroke']
-                    else:
-                            st.write(f'Penanganan Sampling SMOTE ENN data dengan k-{k_sampling}')
-                            df_smote_enn=pd.read_csv('data_sampling_smote_enn_k7.csv')
-                            st.dataframe(df_smote_enn)
-                            X_resampled_smote_enn= df_smote_enn.drop('stroke',axis=1)
-                            y_resampled_smote_enn = df_smote_enn['stroke']
+                   
                    
                     clf = DecisionTreeClassifier(random_state=42,criterion='entropy')
                     clf.fit(X_resampled_smote_enn, y_resampled_smote_enn)
@@ -1845,7 +1840,7 @@ Dataset stroke ini berasal dari penelitian thesis Oluwafemi Emmanuel Zachariah t
                             bmi = st.number_input('BMI')
                            
                             df = pd.read_csv('data_clean.csv')
-                            st.dataframe(df)
+                      
                             x = df.drop(columns=['stroke'])
                             x_normalized = x.copy() 
                             
