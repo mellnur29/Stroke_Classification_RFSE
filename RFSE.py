@@ -1699,12 +1699,8 @@ Dataset stroke ini berasal dari penelitian thesis Oluwafemi Emmanuel Zachariah t
                             bmi_norm = float((bmi - df_min_bmi) / (df_max_bmi - df_min_bmi))
                             
                             inputs = np.array([[bmi_norm,age_norm,avg_norm,work_type_G,gen_Male,smoking_status_N, gen_Female,work_type_P,hypertension_0,heart_disease_0,smoking_status_U,residence_type_R,heart_disease_1,
-                                                ever_married_Y
-                                                
-                                         ]])
-                  
-                           
-                            
+                                                ever_married_Y ]])
+                
                             
                             st.subheader('Hasil Klasifikasi dengan Random Forest SMOTE ')
                             cek_hasil = st.form_submit_button("Cek Hasil Klasifikasi")
