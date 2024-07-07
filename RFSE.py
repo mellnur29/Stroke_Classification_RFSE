@@ -294,7 +294,7 @@ Dataset stroke ini berasal dari penelitian thesis Oluwafemi Emmanuel Zachariah t
 
         st.subheader('Resampling Data')
         # Membuat subplot
-        fig, axes = plt.subplots(2, len(k_values), figsize=(15, 10))
+        fig, axes = plt.subplots(3, len(k_values), figsize=(15, 10))
         fitur1 = st.selectbox("Pilih fitur 1:", X.columns.tolist())
         fitur2 = st.selectbox("Pilih fitur 2:", X.columns.tolist())
         for i, k in enumerate(k_values):
@@ -323,8 +323,8 @@ Dataset stroke ini berasal dari penelitian thesis Oluwafemi Emmanuel Zachariah t
             sns.scatterplot(x=fitur1, y=fitur2, hue=y, data=pd.concat([pd.DataFrame(X), pd.DataFrame({'stroke': y})], axis=1), ax=axes[0, i])
             axes[0, i].set_title(f'Data asli')
             
-            # sns.scatterplot(x=fitur1, y=fitur2, hue=y_resampled_smote, data=pd.concat([pd.DataFrame(X_resampled_smote), pd.DataFrame({'stroke': y_resampled_smote})], axis=1), ax=axes[1, i])
-            # axes[1, i].set_title(f'SMOTE (k={k})')
+            sns.scatterplot(x=fitur1, y=fitur2, hue=y_resampled_smote, data=pd.concat([pd.DataFrame(X_resampled_smote), pd.DataFrame({'stroke': y_resampled_smote})], axis=1), ax=axes[1, i])
+            axes[2, i].set_title(f'SMOTE (k={k})')
 
             # sns.scatterplot(x=fitur1, y=fitur2, hue=y_resampled_enn, data=pd.concat([pd.DataFrame(X_resampled_enn), pd.DataFrame({'stroke': y_resampled_enn})], axis=1), ax=axes[2, i])
             # axes[2, i].set_title(f'ENN (k={k})')
