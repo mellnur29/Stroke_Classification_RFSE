@@ -281,7 +281,7 @@ Dataset stroke ini berasal dari penelitian thesis Oluwafemi Emmanuel Zachariah t
         # cleaned_df.to_csv('data_cleaned.csv', index=False)
         # # Menampilkan hasil imputasi
         # st.dataframe(df_imputed, width=600)
-        k_values = [3, 5, 7]
+        k_values = [3, 5]
         skenario_sampling=[]
         X = cleaned_df.drop('stroke', axis=1)
         y = cleaned_df['stroke']
@@ -323,7 +323,7 @@ Dataset stroke ini berasal dari penelitian thesis Oluwafemi Emmanuel Zachariah t
             sns.scatterplot(x=fitur1, y=fitur2, hue=y, data=pd.concat([pd.DataFrame(X), pd.DataFrame({'stroke': y})], axis=1), ax=axes[0, i])
             axes[0, i].set_title(f'Data asli')
             
-            sns.scatterplot(x=fitur1, y=fitur2, hue=y_resampled_smote, data=pd.concat([pd.DataFrame(X_resampled_smote), pd.DataFrame({'stroke': y_resampled_smote})], axis=1), ax=axes[1, i])
+            sns.scatterplot(x=fitur1, y=fitur2, hue=y_resampled_smote, data=pd.concat([pd.DataFrame(X_resampled_smote), pd.DataFrame({'stroke': y_resampled_smote})], axis=1), ax=axes[2, i])
             axes[2, i].set_title(f'SMOTE (k={k})')
 
             # sns.scatterplot(x=fitur1, y=fitur2, hue=y_resampled_enn, data=pd.concat([pd.DataFrame(X_resampled_enn), pd.DataFrame({'stroke': y_resampled_enn})], axis=1), ax=axes[2, i])
