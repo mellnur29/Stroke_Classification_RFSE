@@ -1556,7 +1556,7 @@ Dataset stroke ini berasal dari penelitian thesis Oluwafemi Emmanuel Zachariah t
                             
 
             # GENDER
-                            gender = st.radio("Gender",('Male', 'Female', 'Other'))
+                            gender = st.radio("Gender",('Male', 'Female'))
                             if gender == "Male":
                                 gen_Female = 0
                                 gen_Male = 1
@@ -1564,7 +1564,7 @@ Dataset stroke ini berasal dari penelitian thesis Oluwafemi Emmanuel Zachariah t
                             elif gender == "Female" :
                                 gen_Female = 1
                                 gen_Male = 0
-                                gen_Other = 0
+                              
                             
 
                             # HYPERTENSION
@@ -1730,7 +1730,7 @@ Dataset stroke ini berasal dari penelitian thesis Oluwafemi Emmanuel Zachariah t
                             
 
             # GENDER
-                            gender = st.radio("Gender",('Male', 'Female', 'Other'))
+                            gender = st.radio("Gender",('Male', 'Female'))
                             if gender == "Male":
                                 gen_Female = 0
                                 gen_Male = 1
@@ -1738,8 +1738,7 @@ Dataset stroke ini berasal dari penelitian thesis Oluwafemi Emmanuel Zachariah t
                             elif gender == "Female" :
                                 gen_Female = 1
                                 gen_Male = 0
-                                gen_Other = 0
-                            
+                                
 
                             # HYPERTENSION
                             hypertension = st.radio("Hypertency",('No', 'Yes'))
