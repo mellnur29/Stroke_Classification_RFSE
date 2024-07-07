@@ -1859,8 +1859,8 @@ Dataset stroke ini berasal dari penelitian thesis Oluwafemi Emmanuel Zachariah t
                             avg_norm = float((avg_glucose_level - df_min_avg) / (df_max_avg - df_min_avg))
                             bmi_norm = float((bmi - df_min_bmi) / (df_max_bmi - df_min_bmi))
                             
-                            inputs = np.array([[age_norm,bmi_norm,avg_norm,work_type_G,work_type_P,gen_Female,smoking_status_F,smoking_status_U ,gen_Male,heart_disease_0,ever_married_Y, residence_type_R,hypertension_0,heart_disease_1
-                                                
+                            inputs = np.array([[bmi_norm,age_norm,avg_norm,work_type_G,gen_Male,smoking_status_N, gen_Female,work_type_P,hypertension_0,heart_disease_0,smoking_status_U,residence_type_R,heart_disease_1,
+                                                ever_married_Y
                                          ]])
                   
                            
