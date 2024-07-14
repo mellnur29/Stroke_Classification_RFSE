@@ -46,7 +46,7 @@ with st.container():
                 "nav-link-selected": {"background-color": "#00008B"}
             }
         )
-        st.write("""
+      
        
 
     if selected == "Home":
