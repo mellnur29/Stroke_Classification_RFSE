@@ -47,10 +47,7 @@ with st.container():
             }
         )
         st.write("""
-        <div style = "position: fixed; left:40px; bottom: 10px;">
-            <center><a href=""><span><img src="https://cdns.iconmonstr.com/wp-content/releases/preview/2012/240/iconmonstr-github-1.png" width="40px" height="40px"></span></a><a style = "margin-left: 20px;" href="http://hanifsantoso05.github.io/datamining/intro.html"><span><img src="https://friconix.com/png/fi-stluxx-jupyter-notebook.png" width="40px" height="40px"></span></a> <a style = "margin-left: 20px;" href="mailto: mellnur2901@gmail.com"><span><img src="https://cdn-icons-png.flaticon.com/512/60/60543.png" width="40px" height="40px"></span></a></center>
-        </div> 
-        """, unsafe_allow_html=True)
+       
 
     if selected == "Home":
         st.write("""<div style="text-align: center;">
